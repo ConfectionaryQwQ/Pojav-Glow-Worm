@@ -237,7 +237,7 @@ int pojavInitOpenGL() {
         if (strcmp(ldrivermodel, "driver_freedreno") == 0)
         {
             setenv("GALLIUM_DRIVER", "freedreno", 1);
-            setenv("MESA_LOADER_DRIVER_OVERRIDE", "msm", 1);
+            setenv("MESA_LOADER_DRIVER_OVERRIDE", "virtio", 1);
             renderer_load_config();
         }
 
